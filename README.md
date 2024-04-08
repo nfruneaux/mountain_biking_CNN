@@ -1,5 +1,7 @@
 # mountain_biking_CNN
 
+![visualized_image_5](https://github.com/nfruneaux/mountain_biking_CNN/assets/72471698/ce47b08b-90d0-403b-8755-334444ce6a92)
+
 (A) Background: 
 
 This is my first NN model created from own data, with own code. Originally initiated in fall 2023 after studying Karpathy zero-to-hero series, Lecun NYU deep learning course, and exploring famous examples like hand-digit recognition using MNIST data set. I was very excited to learn more about neural net models, and thought it would be good to build a project around something I love: mountain biking. With the idea that this could be a first step / aspect in developing more advanced applications, with an interest on autonomous agents and robots.
