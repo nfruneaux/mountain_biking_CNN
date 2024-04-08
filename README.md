@@ -6,7 +6,7 @@
 
 This is my first NN model created from own data, with own code. Originally initiated in fall 2023 after studying Karpathy zero-to-hero series, Lecun NYU deep learning course, and exploring famous examples like hand-digit recognition using MNIST data set. I was very excited to learn more about neural net models, and thought it would be good to build a project around something I love: mountain biking. With the idea that this could be a first step / aspect in developing more advanced applications, with an interest on autonomous agents and robots.
 
-(B) The MTB NN Project Summary: 
+(B) MTB CNN Project Summary: 
 
 Image segmentation CNN trained on custom data to detect labels including: Trail, Sky, Trees 
 
