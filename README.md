@@ -8,11 +8,11 @@ This is my first NN model created from own data, with own code. Originally initi
 
 (B) MTB CNN Project Summary:  
 
-Image segmentation CNN trained on custom data to detect labels including: Trail, Sky, Trees 
+Image segmentation CNN trained on custom data to detect labels including: Trail, Sky, Trees  
 
-This project contains the following main components
-  (i) ~20 training images, which are 1st person POV screenshots from mountain biking videos from Pacific Northwest trails
-  (ii) XML labels for each training image, representing labelled boxes drawn on each training image identifying the following:
+This project contains the following main components  
+  (i) ~20 training images, which are 1st person POV screenshots from mountain biking videos from Pacific Northwest trails  
+  (ii) XML labels for each training image, representing labelled boxes drawn on each training image identifying the following:  
         (a) Trees  
         (b) Trail  
         (c) Sky  
