@@ -1,0 +1,616 @@
+Layer: conv1
+In channels: 3
+Out channels: 32
+Kernel size: (3, 3)
+Stride: (1, 1)
+Padding: (1, 1)
+
+Layer: pool1
+Kernel size: 2
+Stride: 2
+Padding: 0
+
+Layer: conv2
+In channels: 32
+Out channels: 64
+Kernel size: (3, 3)
+Stride: (1, 1)
+Padding: (1, 1)
+
+Layer: pool2
+Kernel size: 3
+Stride: 2
+Padding: 0
+
+Layer: conv3
+In channels: 64
+Out channels: 128
+Kernel size: (3, 3)
+Stride: (1, 1)
+Padding: (1, 1)
+
+Layer: pool3
+Kernel size: 2
+Stride: 2
+Padding: 0
+
+Layer: conv4
+In channels: 128
+Out channels: 3
+Kernel size: (3, 3)
+Stride: (1, 1)
+Padding: (1, 1)
+
+Learning rate: 0.0015
+Number of epochs: 20
+Batch size: 3
+alpha_regul: 0.5
+beta_dist: 0.5
+Criterion: CrossEntropyLoss()
+ Labels Trained: ['Trees', 'Trail', 'Sky']
+Training Time: 16145.753044128418 seconds | 269.095884068807
+
+
+Initialized dataset with labels: ['Trees', 'Trail', 'Sky']
+TRAINING ONGOING
+all-in regul loss:  tensor(0.0058, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.3069, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(1.0931, grad_fn=<NllLoss2DBackward0>)
+Epoch [1/20], Batch [1/7], Loss: 1.4059
+all-in regul loss:  tensor(0.0264, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.2078, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(1.1097, grad_fn=<NllLoss2DBackward0>)
+Epoch [1/20], Batch [2/7], Loss: 1.3440
+all-in regul loss:  tensor(0.0264, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.3122, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(1.1162, grad_fn=<NllLoss2DBackward0>)
+Epoch [1/20], Batch [3/7], Loss: 1.4548
+all-in regul loss:  tensor(0.0220, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1274, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(1.0666, grad_fn=<NllLoss2DBackward0>)
+Epoch [1/20], Batch [4/7], Loss: 1.2159
+all-in regul loss:  tensor(0.0197, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.2180, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(1.0698, grad_fn=<NllLoss2DBackward0>)
+Epoch [1/20], Batch [5/7], Loss: 1.3075
+all-in regul loss:  tensor(0.0227, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1330, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(1.0447, grad_fn=<NllLoss2DBackward0>)
+Epoch [1/20], Batch [6/7], Loss: 1.2004
+all-in regul loss:  tensor(0.0391, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.0750, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(1.0370, grad_fn=<NllLoss2DBackward0>)
+Epoch [1/20], Batch [7/7], Loss: 1.1512
+all-in regul loss:  tensor(0.0262, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.2006, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.9899, grad_fn=<NllLoss2DBackward0>)
+Epoch [2/20], Batch [1/7], Loss: 1.2167
+all-in regul loss:  tensor(0.0356, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.2307, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(1.0487, grad_fn=<NllLoss2DBackward0>)
+Epoch [2/20], Batch [2/7], Loss: 1.3150
+all-in regul loss:  tensor(0.0494, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1163, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.9184, grad_fn=<NllLoss2DBackward0>)
+Epoch [2/20], Batch [3/7], Loss: 1.0841
+all-in regul loss:  tensor(0.0513, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.4002, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.9483, grad_fn=<NllLoss2DBackward0>)
+Epoch [2/20], Batch [4/7], Loss: 1.3999
+all-in regul loss:  tensor(0.0791, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1440, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.9356, grad_fn=<NllLoss2DBackward0>)
+Epoch [2/20], Batch [5/7], Loss: 1.1587
+all-in regul loss:  tensor(0.0974, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1458, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.9494, grad_fn=<NllLoss2DBackward0>)
+Epoch [2/20], Batch [6/7], Loss: 1.1925
+all-in regul loss:  tensor(0.1009, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.0443, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.7406, grad_fn=<NllLoss2DBackward0>)
+Epoch [2/20], Batch [7/7], Loss: 0.8858
+all-in regul loss:  tensor(0.0882, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1481, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.8440, grad_fn=<NllLoss2DBackward0>)
+Epoch [3/20], Batch [1/7], Loss: 1.0803
+all-in regul loss:  tensor(0.1174, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1111, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.7415, grad_fn=<NllLoss2DBackward0>)
+Epoch [3/20], Batch [2/7], Loss: 0.9701
+all-in regul loss:  tensor(0.1240, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1856, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.7086, grad_fn=<NllLoss2DBackward0>)
+Epoch [3/20], Batch [3/7], Loss: 1.0182
+all-in regul loss:  tensor(0.1206, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.3420, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.9429, grad_fn=<NllLoss2DBackward0>)
+Epoch [3/20], Batch [4/7], Loss: 1.4055
+all-in regul loss:  tensor(0.1170, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.2717, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(1.4366, grad_fn=<NllLoss2DBackward0>)
+Epoch [3/20], Batch [5/7], Loss: 1.8253
+all-in regul loss:  tensor(0.1284, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.0792, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.6534, grad_fn=<NllLoss2DBackward0>)
+Epoch [3/20], Batch [6/7], Loss: 0.8610
+all-in regul loss:  tensor(0.1632, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.2050, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.6114, grad_fn=<NllLoss2DBackward0>)
+Epoch [3/20], Batch [7/7], Loss: 0.9797
+all-in regul loss:  tensor(0.1662, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1207, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(1.0193, grad_fn=<NllLoss2DBackward0>)
+Epoch [4/20], Batch [1/7], Loss: 1.3062
+all-in regul loss:  tensor(0.1271, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1828, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.7503, grad_fn=<NllLoss2DBackward0>)
+Epoch [4/20], Batch [2/7], Loss: 1.0602
+all-in regul loss:  tensor(0.1285, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.0884, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.8150, grad_fn=<NllLoss2DBackward0>)
+Epoch [4/20], Batch [3/7], Loss: 1.0319
+all-in regul loss:  tensor(0.1128, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1204, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.7659, grad_fn=<NllLoss2DBackward0>)
+Epoch [4/20], Batch [4/7], Loss: 0.9991
+all-in regul loss:  tensor(0.1153, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.0870, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.7890, grad_fn=<NllLoss2DBackward0>)
+Epoch [4/20], Batch [5/7], Loss: 0.9913
+all-in regul loss:  tensor(0.0967, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.3035, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.8563, grad_fn=<NllLoss2DBackward0>)
+Epoch [4/20], Batch [6/7], Loss: 1.2565
+all-in regul loss:  tensor(0.1067, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.0859, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.6073, grad_fn=<NllLoss2DBackward0>)
+Epoch [4/20], Batch [7/7], Loss: 0.7998
+all-in regul loss:  tensor(0.1000, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.2813, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.8652, grad_fn=<NllLoss2DBackward0>)
+Epoch [5/20], Batch [1/7], Loss: 1.2465
+all-in regul loss:  tensor(0.1096, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1498, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.7355, grad_fn=<NllLoss2DBackward0>)
+Epoch [5/20], Batch [2/7], Loss: 0.9949
+all-in regul loss:  tensor(0.1003, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1472, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.8836, grad_fn=<NllLoss2DBackward0>)
+Epoch [5/20], Batch [3/7], Loss: 1.1311
+all-in regul loss:  tensor(0.1329, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.0886, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.5779, grad_fn=<NllLoss2DBackward0>)
+Epoch [5/20], Batch [4/7], Loss: 0.7995
+all-in regul loss:  tensor(0.1121, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1503, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.7181, grad_fn=<NllLoss2DBackward0>)
+Epoch [5/20], Batch [5/7], Loss: 0.9805
+all-in regul loss:  tensor(0.1358, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1654, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.6063, grad_fn=<NllLoss2DBackward0>)
+Epoch [5/20], Batch [6/7], Loss: 0.9075
+all-in regul loss:  tensor(0.1199, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.2393, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.6257, grad_fn=<NllLoss2DBackward0>)
+Epoch [5/20], Batch [7/7], Loss: 0.9849
+all-in regul loss:  tensor(0.1380, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.0759, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.7864, grad_fn=<NllLoss2DBackward0>)
+Epoch [6/20], Batch [1/7], Loss: 1.0002
+all-in regul loss:  tensor(0.1598, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1356, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.6036, grad_fn=<NllLoss2DBackward0>)
+Epoch [6/20], Batch [2/7], Loss: 0.8990
+all-in regul loss:  tensor(0.1373, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1253, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.7371, grad_fn=<NllLoss2DBackward0>)
+Epoch [6/20], Batch [3/7], Loss: 0.9996
+all-in regul loss:  tensor(0.1260, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1879, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.6011, grad_fn=<NllLoss2DBackward0>)
+Epoch [6/20], Batch [4/7], Loss: 0.9150
+all-in regul loss:  tensor(0.1317, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1170, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.7255, grad_fn=<NllLoss2DBackward0>)
+Epoch [6/20], Batch [5/7], Loss: 0.9742
+all-in regul loss:  tensor(0.1263, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.2452, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.6580, grad_fn=<NllLoss2DBackward0>)
+Epoch [6/20], Batch [6/7], Loss: 1.0295
+all-in regul loss:  tensor(0.1358, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.0931, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.4486, grad_fn=<NllLoss2DBackward0>)
+Epoch [6/20], Batch [7/7], Loss: 0.6774
+all-in regul loss:  tensor(0.1247, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.3467, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.8305, grad_fn=<NllLoss2DBackward0>)
+Epoch [7/20], Batch [1/7], Loss: 1.3018
+all-in regul loss:  tensor(0.1278, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1004, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.5783, grad_fn=<NllLoss2DBackward0>)
+Epoch [7/20], Batch [2/7], Loss: 0.8066
+all-in regul loss:  tensor(0.1349, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1616, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.5778, grad_fn=<NllLoss2DBackward0>)
+Epoch [7/20], Batch [3/7], Loss: 0.8743
+all-in regul loss:  tensor(0.1653, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.0425, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.9651, grad_fn=<NllLoss2DBackward0>)
+Epoch [7/20], Batch [4/7], Loss: 1.1729
+all-in regul loss:  tensor(0.1350, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1215, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.7924, grad_fn=<NllLoss2DBackward0>)
+Epoch [7/20], Batch [5/7], Loss: 1.0489
+all-in regul loss:  tensor(0.1545, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1404, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.4772, grad_fn=<NllLoss2DBackward0>)
+Epoch [7/20], Batch [6/7], Loss: 0.7720
+all-in regul loss:  tensor(0.1523, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1968, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.5333, grad_fn=<NllLoss2DBackward0>)
+Epoch [7/20], Batch [7/7], Loss: 0.8824
+all-in regul loss:  tensor(0.1231, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1862, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.7302, grad_fn=<NllLoss2DBackward0>)
+Epoch [8/20], Batch [1/7], Loss: 1.0396
+all-in regul loss:  tensor(0.1227, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1908, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.7096, grad_fn=<NllLoss2DBackward0>)
+Epoch [8/20], Batch [2/7], Loss: 1.0231
+all-in regul loss:  tensor(0.1237, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1369, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.6719, grad_fn=<NllLoss2DBackward0>)
+Epoch [8/20], Batch [3/7], Loss: 0.9324
+all-in regul loss:  tensor(0.1225, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.3336, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.6709, grad_fn=<NllLoss2DBackward0>)
+Epoch [8/20], Batch [4/7], Loss: 1.1269
+all-in regul loss:  tensor(0.1248, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1258, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.5418, grad_fn=<NllLoss2DBackward0>)
+Epoch [8/20], Batch [5/7], Loss: 0.7924
+all-in regul loss:  tensor(0.1420, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.0535, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.7630, grad_fn=<NllLoss2DBackward0>)
+Epoch [8/20], Batch [6/7], Loss: 0.9585
+all-in regul loss:  tensor(0.1573, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.2270, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.5507, grad_fn=<NllLoss2DBackward0>)
+Epoch [8/20], Batch [7/7], Loss: 0.9350
+all-in regul loss:  tensor(0.1444, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1142, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.5714, grad_fn=<NllLoss2DBackward0>)
+Epoch [9/20], Batch [1/7], Loss: 0.8300
+all-in regul loss:  tensor(0.1390, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.3238, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.9225, grad_fn=<NllLoss2DBackward0>)
+Epoch [9/20], Batch [2/7], Loss: 1.3853
+all-in regul loss:  tensor(0.1873, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.0351, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.7794, grad_fn=<NllLoss2DBackward0>)
+Epoch [9/20], Batch [3/7], Loss: 1.0017
+all-in regul loss:  tensor(0.1833, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.0935, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.3603, grad_fn=<NllLoss2DBackward0>)
+Epoch [9/20], Batch [4/7], Loss: 0.6371
+all-in regul loss:  tensor(0.1430, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1896, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.5624, grad_fn=<NllLoss2DBackward0>)
+Epoch [9/20], Batch [5/7], Loss: 0.8950
+all-in regul loss:  tensor(0.1256, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1558, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.7610, grad_fn=<NllLoss2DBackward0>)
+Epoch [9/20], Batch [6/7], Loss: 1.0424
+all-in regul loss:  tensor(0.1134, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1959, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.7227, grad_fn=<NllLoss2DBackward0>)
+Epoch [9/20], Batch [7/7], Loss: 1.0320
+all-in regul loss:  tensor(0.1369, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1992, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.5882, grad_fn=<NllLoss2DBackward0>)
+Epoch [10/20], Batch [1/7], Loss: 0.9243
+all-in regul loss:  tensor(0.1194, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1461, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.6657, grad_fn=<NllLoss2DBackward0>)
+Epoch [10/20], Batch [2/7], Loss: 0.9312
+all-in regul loss:  tensor(0.1293, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1364, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.8299, grad_fn=<NllLoss2DBackward0>)
+Epoch [10/20], Batch [3/7], Loss: 1.0956
+all-in regul loss:  tensor(0.1307, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1238, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.6432, grad_fn=<NllLoss2DBackward0>)
+Epoch [10/20], Batch [4/7], Loss: 0.8977
+all-in regul loss:  tensor(0.1105, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.2533, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.7178, grad_fn=<NllLoss2DBackward0>)
+Epoch [10/20], Batch [5/7], Loss: 1.0816
+all-in regul loss:  tensor(0.1470, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.0948, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.3930, grad_fn=<NllLoss2DBackward0>)
+Epoch [10/20], Batch [6/7], Loss: 0.6348
+all-in regul loss:  tensor(0.1577, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.0647, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.7503, grad_fn=<NllLoss2DBackward0>)
+Epoch [10/20], Batch [7/7], Loss: 0.9727
+all-in regul loss:  tensor(0.1383, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1994, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.4843, grad_fn=<NllLoss2DBackward0>)
+Epoch [11/20], Batch [1/7], Loss: 0.8220
+all-in regul loss:  tensor(0.1288, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1923, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.8923, grad_fn=<NllLoss2DBackward0>)
+Epoch [11/20], Batch [2/7], Loss: 1.2134
+all-in regul loss:  tensor(0.1466, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.0948, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.4525, grad_fn=<NllLoss2DBackward0>)
+Epoch [11/20], Batch [3/7], Loss: 0.6939
+all-in regul loss:  tensor(0.1248, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1850, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(1.0030, grad_fn=<NllLoss2DBackward0>)
+Epoch [11/20], Batch [4/7], Loss: 1.3129
+all-in regul loss:  tensor(0.1377, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1764, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.5573, grad_fn=<NllLoss2DBackward0>)
+Epoch [11/20], Batch [5/7], Loss: 0.8713
+all-in regul loss:  tensor(0.1288, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1851, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.7366, grad_fn=<NllLoss2DBackward0>)
+Epoch [11/20], Batch [6/7], Loss: 1.0505
+all-in regul loss:  tensor(0.0979, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.2014, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.7582, grad_fn=<NllLoss2DBackward0>)
+Epoch [11/20], Batch [7/7], Loss: 1.0574
+all-in regul loss:  tensor(0.1445, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1773, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.4928, grad_fn=<NllLoss2DBackward0>)
+Epoch [12/20], Batch [1/7], Loss: 0.8147
+all-in regul loss:  tensor(0.1520, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1192, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.7186, grad_fn=<NllLoss2DBackward0>)
+Epoch [12/20], Batch [2/7], Loss: 0.9897
+all-in regul loss:  tensor(0.1491, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.0728, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.6627, grad_fn=<NllLoss2DBackward0>)
+Epoch [12/20], Batch [3/7], Loss: 0.8846
+all-in regul loss:  tensor(0.1392, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1444, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.7803, grad_fn=<NllLoss2DBackward0>)
+Epoch [12/20], Batch [4/7], Loss: 1.0638
+all-in regul loss:  tensor(0.1387, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1530, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.8695, grad_fn=<NllLoss2DBackward0>)
+Epoch [12/20], Batch [5/7], Loss: 1.1613
+all-in regul loss:  tensor(0.1248, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1056, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.5369, grad_fn=<NllLoss2DBackward0>)
+Epoch [12/20], Batch [6/7], Loss: 0.7673
+all-in regul loss:  tensor(0.1187, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.3890, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(1.1335, grad_fn=<NllLoss2DBackward0>)
+Epoch [12/20], Batch [7/7], Loss: 1.6412
+all-in regul loss:  tensor(0.1245, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.2332, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.5169, grad_fn=<NllLoss2DBackward0>)
+Epoch [13/20], Batch [1/7], Loss: 0.8746
+all-in regul loss:  tensor(0.1203, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1901, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.6752, grad_fn=<NllLoss2DBackward0>)
+Epoch [13/20], Batch [2/7], Loss: 0.9856
+all-in regul loss:  tensor(0.1679, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.0971, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.4582, grad_fn=<NllLoss2DBackward0>)
+Epoch [13/20], Batch [3/7], Loss: 0.7232
+all-in regul loss:  tensor(0.1462, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.0811, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.6809, grad_fn=<NllLoss2DBackward0>)
+Epoch [13/20], Batch [4/7], Loss: 0.9082
+all-in regul loss:  tensor(0.1372, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.2262, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.7797, grad_fn=<NllLoss2DBackward0>)
+Epoch [13/20], Batch [5/7], Loss: 1.1431
+all-in regul loss:  tensor(0.1525, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1076, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.6144, grad_fn=<NllLoss2DBackward0>)
+Epoch [13/20], Batch [6/7], Loss: 0.8745
+all-in regul loss:  tensor(0.1675, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.0412, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.9012, grad_fn=<NllLoss2DBackward0>)
+Epoch [13/20], Batch [7/7], Loss: 1.1099
+all-in regul loss:  tensor(0.1549, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1229, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.4440, grad_fn=<NllLoss2DBackward0>)
+Epoch [14/20], Batch [1/7], Loss: 0.7218
+all-in regul loss:  tensor(0.1196, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.2098, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.5762, grad_fn=<NllLoss2DBackward0>)
+Epoch [14/20], Batch [2/7], Loss: 0.9057
+all-in regul loss:  tensor(0.1273, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1786, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.6171, grad_fn=<NllLoss2DBackward0>)
+Epoch [14/20], Batch [3/7], Loss: 0.9229
+all-in regul loss:  tensor(0.1263, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1986, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.5542, grad_fn=<NllLoss2DBackward0>)
+Epoch [14/20], Batch [4/7], Loss: 0.8790
+all-in regul loss:  tensor(0.1274, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.0966, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.6611, grad_fn=<NllLoss2DBackward0>)
+Epoch [14/20], Batch [5/7], Loss: 0.8851
+all-in regul loss:  tensor(0.1202, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.2750, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.6855, grad_fn=<NllLoss2DBackward0>)
+Epoch [14/20], Batch [6/7], Loss: 1.0806
+all-in regul loss:  tensor(0.1194, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.2878, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.6528, grad_fn=<NllLoss2DBackward0>)
+Epoch [14/20], Batch [7/7], Loss: 1.0601
+all-in regul loss:  tensor(0.1239, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.2001, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.5963, grad_fn=<NllLoss2DBackward0>)
+Epoch [15/20], Batch [1/7], Loss: 0.9203
+all-in regul loss:  tensor(0.1424, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1018, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.4531, grad_fn=<NllLoss2DBackward0>)
+Epoch [15/20], Batch [2/7], Loss: 0.6973
+all-in regul loss:  tensor(0.1445, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.0702, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.6558, grad_fn=<NllLoss2DBackward0>)
+Epoch [15/20], Batch [3/7], Loss: 0.8705
+all-in regul loss:  tensor(0.1352, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.2450, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.7853, grad_fn=<NllLoss2DBackward0>)
+Epoch [15/20], Batch [4/7], Loss: 1.1655
+all-in regul loss:  tensor(0.1643, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.0663, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.7556, grad_fn=<NllLoss2DBackward0>)
+Epoch [15/20], Batch [5/7], Loss: 0.9862
+all-in regul loss:  tensor(0.1582, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1776, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.6364, grad_fn=<NllLoss2DBackward0>)
+Epoch [15/20], Batch [6/7], Loss: 0.9721
+all-in regul loss:  tensor(0.1570, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.0873, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.6773, grad_fn=<NllLoss2DBackward0>)
+Epoch [15/20], Batch [7/7], Loss: 0.9217
+all-in regul loss:  tensor(0.1500, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1049, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.4124, grad_fn=<NllLoss2DBackward0>)
+Epoch [16/20], Batch [1/7], Loss: 0.6673
+all-in regul loss:  tensor(0.1388, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.0843, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.5811, grad_fn=<NllLoss2DBackward0>)
+Epoch [16/20], Batch [2/7], Loss: 0.8042
+all-in regul loss:  tensor(0.1273, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.2072, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.6947, grad_fn=<NllLoss2DBackward0>)
+Epoch [16/20], Batch [3/7], Loss: 1.0292
+all-in regul loss:  tensor(0.1378, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1254, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.6709, grad_fn=<NllLoss2DBackward0>)
+Epoch [16/20], Batch [4/7], Loss: 0.9340
+all-in regul loss:  tensor(0.1241, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1561, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.5854, grad_fn=<NllLoss2DBackward0>)
+Epoch [16/20], Batch [5/7], Loss: 0.8656
+all-in regul loss:  tensor(0.1156, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.3057, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.7650, grad_fn=<NllLoss2DBackward0>)
+Epoch [16/20], Batch [6/7], Loss: 1.1863
+all-in regul loss:  tensor(0.1332, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.2254, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.5414, grad_fn=<NllLoss2DBackward0>)
+Epoch [16/20], Batch [7/7], Loss: 0.9000
+all-in regul loss:  tensor(0.1278, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1350, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.5126, grad_fn=<NllLoss2DBackward0>)
+Epoch [17/20], Batch [1/7], Loss: 0.7754
+all-in regul loss:  tensor(0.1203, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1741, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.6341, grad_fn=<NllLoss2DBackward0>)
+Epoch [17/20], Batch [2/7], Loss: 0.9284
+all-in regul loss:  tensor(0.1313, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1947, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.5118, grad_fn=<NllLoss2DBackward0>)
+Epoch [17/20], Batch [3/7], Loss: 0.8378
+all-in regul loss:  tensor(0.1284, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1488, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.6268, grad_fn=<NllLoss2DBackward0>)
+Epoch [17/20], Batch [4/7], Loss: 0.9040
+all-in regul loss:  tensor(0.1536, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.2142, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.4253, grad_fn=<NllLoss2DBackward0>)
+Epoch [17/20], Batch [5/7], Loss: 0.7931
+all-in regul loss:  tensor(0.1699, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.0608, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.7699, grad_fn=<NllLoss2DBackward0>)
+Epoch [17/20], Batch [6/7], Loss: 1.0006
+all-in regul loss:  tensor(0.1794, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.0462, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(1.1375, grad_fn=<NllLoss2DBackward0>)
+Epoch [17/20], Batch [7/7], Loss: 1.3631
+all-in regul loss:  tensor(0.1286, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1343, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.6394, grad_fn=<NllLoss2DBackward0>)
+Epoch [18/20], Batch [1/7], Loss: 0.9023
+all-in regul loss:  tensor(0.1583, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1067, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.5609, grad_fn=<NllLoss2DBackward0>)
+Epoch [18/20], Batch [2/7], Loss: 0.8259
+all-in regul loss:  tensor(0.1487, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1007, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.5785, grad_fn=<NllLoss2DBackward0>)
+Epoch [18/20], Batch [3/7], Loss: 0.8278
+all-in regul loss:  tensor(0.1413, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.2410, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.8861, grad_fn=<NllLoss2DBackward0>)
+Epoch [18/20], Batch [4/7], Loss: 1.2684
+all-in regul loss:  tensor(0.1338, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.2599, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(1.1873, grad_fn=<NllLoss2DBackward0>)
+Epoch [18/20], Batch [5/7], Loss: 1.5811
+all-in regul loss:  tensor(0.1384, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1748, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.5265, grad_fn=<NllLoss2DBackward0>)
+Epoch [18/20], Batch [6/7], Loss: 0.8397
+all-in regul loss:  tensor(0.0939, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.2350, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.8660, grad_fn=<NllLoss2DBackward0>)
+Epoch [18/20], Batch [7/7], Loss: 1.1950
+all-in regul loss:  tensor(0.1065, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1782, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.7030, grad_fn=<NllLoss2DBackward0>)
+Epoch [19/20], Batch [1/7], Loss: 0.9877
+all-in regul loss:  tensor(0.1169, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1762, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.5216, grad_fn=<NllLoss2DBackward0>)
+Epoch [19/20], Batch [2/7], Loss: 0.8146
+all-in regul loss:  tensor(0.1103, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1222, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.6695, grad_fn=<NllLoss2DBackward0>)
+Epoch [19/20], Batch [3/7], Loss: 0.9020
+all-in regul loss:  tensor(0.1117, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.2510, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.6449, grad_fn=<NllLoss2DBackward0>)
+Epoch [19/20], Batch [4/7], Loss: 1.0076
+all-in regul loss:  tensor(0.1331, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.0915, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(1.0046, grad_fn=<NllLoss2DBackward0>)
+Epoch [19/20], Batch [5/7], Loss: 1.2292
+all-in regul loss:  tensor(0.1172, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1211, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.8630, grad_fn=<NllLoss2DBackward0>)
+Epoch [19/20], Batch [6/7], Loss: 1.1012
+all-in regul loss:  tensor(0.1515, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1951, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.5429, grad_fn=<NllLoss2DBackward0>)
+Epoch [19/20], Batch [7/7], Loss: 0.8896
+all-in regul loss:  tensor(0.1134, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.0975, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.6292, grad_fn=<NllLoss2DBackward0>)
+Epoch [20/20], Batch [1/7], Loss: 0.8402
+all-in regul loss:  tensor(0.1441, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.0725, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.5915, grad_fn=<NllLoss2DBackward0>)
+Epoch [20/20], Batch [2/7], Loss: 0.8081
+all-in regul loss:  tensor(0.1311, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.2997, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.5798, grad_fn=<NllLoss2DBackward0>)
+Epoch [20/20], Batch [3/7], Loss: 1.0105
+all-in regul loss:  tensor(0.1367, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1302, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.5902, grad_fn=<NllLoss2DBackward0>)
+Epoch [20/20], Batch [4/7], Loss: 0.8570
+all-in regul loss:  tensor(0.1003, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.2186, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.9449, grad_fn=<NllLoss2DBackward0>)
+Epoch [20/20], Batch [5/7], Loss: 1.2639
+all-in regul loss:  tensor(0.1395, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.1320, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.7596, grad_fn=<NllLoss2DBackward0>)
+Epoch [20/20], Batch [6/7], Loss: 1.0310
+all-in regul loss:  tensor(0.1170, grad_fn=<MulBackward0>)
+all-in dist loss:  tensor(0.2665, grad_fn=<MulBackward0>)
+segmentation loss:  tensor(0.7339, grad_fn=<NllLoss2DBackward0>)
+Epoch [20/20], Batch [7/7], Loss: 1.1174
+Finished Training |  16145.753044128418  seconds |  269.095884068807  |
