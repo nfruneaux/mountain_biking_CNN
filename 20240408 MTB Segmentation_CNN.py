@@ -23,14 +23,19 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # %% DIRECTORIES SUMMARY
 
+base_path = os.path.dirname(__file__)
+
 #Training Images and XML Labels
-image_dir = '/Users/nicholasfruneaux/Projects/Python Deep Learn/20230920 MTB NN-clean/Training Images' 
-annotations_dir = '/Users/nicholasfruneaux/Projects/Python Deep Learn/20230920 MTB NN-clean/Training Images XML'
+image_dir = os.path.join(base_path, 'Training Images')
+annotations_dir = os.path.join(base_path, 'Training Images XML')
 
 #Load Validation images
-val_image_dir = "/Users/nicholasfruneaux/Projects/Python Deep Learn/20230920 MTB NN-clean/Validation Images"  #directory of validation images
+val_image_dir = os.path.join(base_path, 'Validation Images')
+
+#Model Save Directory
 model_name = "fcn_multi_label.pth"
-save_dir = "/Users/nicholasfruneaux/Projects/Python Deep Learn/20230920 MTB NN-clean/Test_Model_Saves" #directory to save the NN model
+save_dir = os.path.join(base_path, 'Model Saves')
+os.makedirs(save_dir, exist_ok=True)
 
 #Load model for Visualization
 visual_load_dir = save_dir
@@ -39,8 +44,6 @@ visual_save_dir = save_dir #change the image save directory as needed
 
 #Save model Parameters (.txt file)
 model_parameters_save_dir = save_dir
-
-os.makedirs(save_dir, exist_ok=True)
 
 # %% DATA PREPARATION AND SETUP (extract labels, create masks, etc.)
 to_tensor = transforms.ToTensor()
