@@ -1,6 +1,10 @@
 # mountain_biking_CNN
 
-![visualized_image_5](https://github.com/nfruneaux/mountain_biking_CNN/assets/72471698/ce47b08b-90d0-403b-8755-334444ce6a92)
+![visualized_image_5](https://github.com/nfruneaux/mountain_biking_CNN/assets/72471698/dc2311e5-9802-47af-9687-6430f4ac40c3)
+![visualized_image_4](https://github.com/nfruneaux/mountain_biking_CNN/assets/72471698/5f8e6b15-4901-424b-946f-96464f15596c)
+![visualized_image_3](https://github.com/nfruneaux/mountain_biking_CNN/assets/72471698/cc332a74-463d-474b-bfbb-56b57f0f6e05)
+![visualized_image_2](https://github.com/nfruneaux/mountain_biking_CNN/assets/72471698/08a5d5f8-1725-4b64-8756-72ea8e0111fe)
+
 
 (A) Background: 
 
