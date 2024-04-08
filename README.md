@@ -13,11 +13,11 @@ Image segmentation CNN trained on custom data to detect labels including: Trail,
 This project contains the following main components  
   (i) ~20 training images, which are 1st person POV screenshots from mountain biking videos from Pacific Northwest trails  
   (ii) XML labels for each training image, representing labelled boxes drawn on each training image identifying the following:  
-    (a) Trees  
-    (b) Trail  
-    (c) Sky  
-    (d) Biker  
-    (e) Bike  
+> (a) Trees  
+> (b) Trail  
+(c) Sky  
+(d) Biker  
+(e) Bike  
 
   (iii) A set of validation images, meaning other screenshots from mountain biking videos, that have not been used to train the model  
   (iv) Python code which configures a convolution neural network to identify the labelled features, trained in batches  
