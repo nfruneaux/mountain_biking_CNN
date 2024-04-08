@@ -14,12 +14,7 @@ This project contains the following main components:
 
   &nbsp;&nbsp;&nbsp;&nbsp; (i) ~20 training images, which are 1st person POV screenshots from mountain biking videos from Pacific Northwest trails  
   
-  &nbsp;&nbsp;&nbsp;&nbsp; (ii) XML labels for each training image, representing labelled boxes drawn on each training image identifying the following:  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (a) Trees  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (b) Trail    
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (c) Sky  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (d) Biker  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (e) Bike  
+  &nbsp;&nbsp;&nbsp;&nbsp; (ii) XML labels for each training image, representing labelled boxes drawn on each training image identifying the following: Trees, Trail , Sky, Biker, Bike
 
   &nbsp;&nbsp;&nbsp;&nbsp; (iii) A set of validation images, meaning other screenshots from mountain biking videos, that have not been used to train the model  
   
