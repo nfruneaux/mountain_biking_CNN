@@ -27,7 +27,3 @@ In addition, there is a folder named "Trained Model Output" which contains a tra
 Inside the python code, in the directory summary section at the top, there is also a line "save_dir" which will create a folder and save a trained model, if training is initialized and completed in full. Presumably this folder would only be created in your local clone folder.
 
 Regarding the training process, a number of optimizations were tried including different CNN parameters, different loss functions, etc. The current approach remains simple in the use of CNN parameters, and relies as well on some small hyperparamters in the loss function related to distribution loss and regularization. It is believed that these improve the model training but needs to be tested more thoroughly --- generally the conclusion has been that the overall architecture integrity and data qualiity is more meaninful than hyperparameters. 
-
-![visualized_image_4](https://github.com/nfruneaux/mountain_biking_CNN/assets/72471698/5f8e6b15-4901-424b-946f-96464f15596c)
-![visualized_image_3](https://github.com/nfruneaux/mountain_biking_CNN/assets/72471698/cc332a74-463d-474b-bfbb-56b57f0f6e05)
-![visualized_image_2](https://github.com/nfruneaux/mountain_biking_CNN/assets/72471698/08a5d5f8-1725-4b64-8756-72ea8e0111fe)
