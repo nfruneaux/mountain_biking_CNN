@@ -26,4 +26,18 @@ In addition, there is a folder named "Trained Model Output" which contains a tra
 
 Inside the python code, in the directory summary section at the top, there is also a line "save_dir" which will create a folder and save a trained model, if training is initialized and completed in full. Presumably this folder would only be created in your local clone folder.
 
-Regarding the training process, a number of optimizations were tried including different CNN parameters, different loss functions, etc. The current approach remains simple in the use of CNN parameters, and relies as well on some small hyperparamters in the loss function related to distribution loss and regularization. It is believed that these improve the model training but needs to be tested more thoroughly --- generally the conclusion has been that the overall architecture integrity and data qualiity is more meaninful than hyperparameters. 
+Regarding the training process, a number of optimizations were tried including different CNN parameters, different loss functions, etc. The current approach remains simple in the use of CNN parameters, and relies as well on some small hyperparamters in the loss function related to distribution loss and regularization. It is believed that these improve the model training but needs to be tested more thoroughly --- generally the conclusion has been that the overall architecture integrity and data qualiity is more meaninful than hyperparameters.  
+
+
+(C) HOW-TO Summary:
+
+If you would like to run the code and train your own model, first clone the repository to your local device, then run the code blocks from the python file in order: import libraries, run the directories, run the model setup (data class section), run the CNN (model initialization), run the training loop.  
+
+After the training loop is completed, the model will be saved and from there it would be possible to run the visualization code. 
+
+Feel free to adjust the number of training epochs, the learning rate, or other parameters as needed. 
+
+
+(D) Other:
+
+Feedback and ideas most welcome
