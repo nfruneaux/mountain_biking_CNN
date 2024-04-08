@@ -10,17 +10,21 @@ This is my first NN model created from own data, with own code. Originally initi
 
 Image segmentation CNN trained on custom data to detect labels including: Trail, Sky, Trees  
 
-This project contains the following main components  
+This project contains the following main components:  
+
   (i) ~20 training images, which are 1st person POV screenshots from mountain biking videos from Pacific Northwest trails  
+  
   (ii) XML labels for each training image, representing labelled boxes drawn on each training image identifying the following:  
-&nbsp;&nbsp;&nbsp;&nbsp; (a) Trees  
-&nbsp;&nbsp;&nbsp;&nbsp; (b) Trail    
-&nbsp;&nbsp;&nbsp;&nbsp; (c) Sky  
-&nbsp;&nbsp;&nbsp;&nbsp; (d) Biker  
-&nbsp;&nbsp;&nbsp;&nbsp; (e) Bike  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (a) Trees  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (b) Trail    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (c) Sky  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (d) Biker  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (e) Bike  
 
   (iii) A set of validation images, meaning other screenshots from mountain biking videos, that have not been used to train the model  
+  
   (iv) Python code which configures a convolution neural network to identify the labelled features, trained in batches  
+  
 
 In addition, there is a folder named "Trained Model Output" which contains a trained CNN model (weights, optimizer, etc.) which can be imported into the visalization part of the code (instead of training a new model from scratch). This way one can re-use the current best trained model, and/or test it on new validation images. This model was only trained on the three main categories of focus in this project: Trees, Trail, Sky.
 
