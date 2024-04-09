@@ -26,7 +26,7 @@ In addition, there is a folder named "Trained Model Output" which contains a tra
 
 Inside the python code, in the directory summary section at the top, there is also a line "save_dir" which will create a folder and save a trained model, if training is initialized and completed in full. Presumably this folder would only be created in your local clone folder.
 
-Regarding the training process, a number of optimizations were tried including different CNN parameters, different loss functions, etc. The current approach remains simple in the use of CNN parameters, and relies as well on some small hyperparamters in the loss function related to distribution loss and regularization. It is believed that these improve the model training but needs to be tested more thoroughly --- generally the conclusion has been that the overall architecture integrity and data qualiity is more meaninful than hyperparameters.  
+Regarding the training process, a number of optimizations were tried including different CNN parameters, different loss functions, etc. The current approach remains simple in the use of CNN parameters, and relies as well on some small hyperparamters in the loss function related to distribution loss and regularization. It is believed that these improve the model training but needs to be tested more thoroughly --- generally the conclusion has been that the overall architecture integrity and data qualiity is more meaningful than hyperparameters.  
 
 
 (C) HOW-TO Summary:
